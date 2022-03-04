@@ -398,10 +398,10 @@ function makeResponsive() {
                 // Draw circles with new x & y values
                 circlesGroup = renderCircles(circlesGroup, xLinearScale, chosenXAxis, yLinearScale, chosenYAxis);
 
-                // Updates tooltips text with new info
+                // Update tooltips text with new info
                 circleText = updateText(circleText, xLinearScale, chosenXAxis, yLinearScale, chosenYAxis);
 
-                // Updates toolTip with new x & y values
+                // Update tooltip with new x & y values
                 circlesGroup = updateToolTip(chosenXAxis, chosenYAxis, circlesGroup);
 
             });
@@ -416,10 +416,3 @@ function makeResponsive() {
 
 }
 
-
-// /* ************************************************************************ */
-// // Call main parent makeResponsive function upon html page load and resize
-// /* ************************************************************************ */
-// makeResponsive();
-// d3.select(window).on("resize", makeResponsive);
-// /* ************************************************************************ */
